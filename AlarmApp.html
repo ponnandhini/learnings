@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Alarm App</title>
+     <link href='E:\Besant\Alarm.css' rel='stylesheet'>
+     	
+  </head>
+  <body>
+      <section>
+          <h1>Alarm App</h1>
+      </section>
+
+      <section  id="body">
+          <div id="alarm-container">
+              <div id="current-time"></div>
+              <div id="set-time">
+                 <div id="hour">
+	   <input type="number" name="hours" min="1" max="12" id="hr">
+                 </div>
+                 <div id="minute">
+	    <input type="number" name="hours" min="1" max="60" id="min">
+                 </div>
+              </div>
+              <div>
+                 <button id="set-alarm" onclick="addAlarm()">set alarm</button>
+              </div>
+              <div id="alarm-list-container">
+                 <div  id="alarm-lists"></div>
+                 <div  id="alarm-list"></div>
+              </div>
+               
+          </div>         	    
+      </section> 
+
+      <section id="clock">
+          <figure>
+              <img src="E:\Art_photo\clock.png" width="200" height="200">
+          </figure>
+      </section>      
+ 
+  </body>
+  <script>
+       let dt = new Date();
+       let time = dt.toLocaleTimeString();
+
+       document.getElementById('current-time').innerHTML = time;
+
+       function addAlarm() {
+
+	//const underLine = document.createElement("div");
+	//const att = document.createElement("div")
+
+	let hr = document.getElementById('hr').value;
+	let min = document.getElementById('min').value;
+	let alarm = document.getElementById('alarm-lists').textContent = hr+" : "+min;
+
+      }
+      setInterval(timeUpdate,60000);
+      function timeUpdate() {
+	let dt = new Date();
+       	let time = dt.toLocaleTimeString();
+	document.getElementById('current-time').textContent = time;
+      }
+      /*const alarmTime = new Date(); 
+	alarmTime.setHours(hr);		
+	alarmTime.setMinutes(min);
+	alarmTime.setSeconds(0);
+
+	if(time === alarmTime){
+		console.log("/~/~/~/~/~/~")
+	}*/
+      
+
+  </script>
+</html>
