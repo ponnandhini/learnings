@@ -1,0 +1,99 @@
+body{
+	margin: 0px;
+    	height: 96vh;
+    	width: 96vw;
+	background-color: white;
+}
+#bars-container{
+	    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 95px;
+    margin-left: 95px;
+}
+h1{
+	color: black;
+	text-align: center;
+}
+#first-bar{
+    	width: 73px;
+    	height: 73px;
+    	border-radius: 50%;
+    	border: 5px solid lightgray;
+    	text-align: center;
+    	/*margin: 5px;*/
+	    color: lightgray;
+    font-size: -webkit-xxx-large;
+}
+#second-bar{
+    	width: 73px;
+    	height: 73px;
+    	border-radius: 50%;
+    	border: 5px solid lightgray;
+    	text-align: center;
+    	/*margin: 5px;*/
+	    color: lightgray;
+    font-size: -webkit-xxx-large;
+}
+#third-bar{
+	width: 73px;
+    	height: 73px;
+    	border-radius: 50%;
+    	border: 5px solid lightgray;
+    	text-align: center;
+    	/*margin: 5px;*/
+	    color: lightgray;
+    font-size: -webkit-xxx-large;
+}
+#fourth-bar{
+    	width: 73px;
+    	height:73px;
+    	border-radius: 50%;
+    	border: 5px solid lightgray;
+    	text-align: center;
+    	/*margin: 5px;*/
+	    color: lightgray;
+    font-size: -webkit-xxx-large;
+}
+#navigate-buttons{
+	    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+#pre-button{
+	width: 112px;
+    	height: 40px;
+    	border: 2px solid #1F75FE;
+    	background-color: #1F75FE;
+    	margin: 50px;
+	color: white;
+}
+#nxt-button{
+	width: 112px;
+    	height: 40px;
+    	border: 2px solid #1F75FE;
+    	background-color: #1F75FE;
+    	margin: 50px;
+	color: white;
+}
+#second-line{
+	width: 100px;
+    	height: 5px;
+    	background-color: lightgray;
+	margin-top: 40px;
+}
+#first-line{
+	width: 100px;
+    	height: 5px;
+    	background-color: lightgray;
+	margin-top: 40px;
+}
+#third-line{
+	width: 100px;
+    	height: 5px;
+    	background-color: lightgray;
+	margin-top: 40px;
+}

@@ -27,14 +27,15 @@ h1{
 }
 
 #current-time{
-	width: 173px;
-    	height: 32px;
-   	border-radius: 5px;
+	    width: 173px;
+    	     height: 32px;
     	background-color: white;
-	text-align: center;
-	margin-top: 60px;
-	align-items: center;
-	
+    	text-align: center;
+    	margin-top: 60px;
+    	align-items: center;
+    	padding: 9px;
+    	border-radius: 37px;
+    	font-weight: bold;    margin-left: 30px;
 }
 
 #set-time{
@@ -74,8 +75,9 @@ div{
 #set-alarm{
     	width: 73px;
     	height: 25px;
-    	background-color: #00d5ffb8;
+    	background-color: #1F75FE;
     	border-radius: 25px;
+    	border: 1px;
 }
 #clock{
 	display: flex;
@@ -88,12 +90,12 @@ div{
 	align-content: flex-start;
 }
 #alarm-lists{
-	width: 173px;
+	width: 250px;
     	height: 33px;
     	align-content: flex-start;
 }
 #alarm-list{
-	width: 173px;
+	width: 250px;
     	height: 2px;
     	background-color: white;
 }

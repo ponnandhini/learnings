@@ -2,7 +2,7 @@
 <html>
   <head>
      <title>Alarm App</title>
-     <link href='E:\Besant\Alarm.css' rel='stylesheet'>
+     <link href='Alarm.css' rel='stylesheet'>
      	
   </head>
   <body>
@@ -25,7 +25,7 @@
                  <button id="set-alarm" onclick="addAlarm()">set alarm</button>
               </div>
               <div id="alarm-list-container">
-                 <div  id="alarm-lists"></div>
+           
                  <div  id="alarm-list"></div>
               </div>
                
@@ -42,34 +42,43 @@
   <script>
        let dt = new Date();
        let time = dt.toLocaleTimeString();
+       
 
        document.getElementById('current-time').innerHTML = time;
 
        function addAlarm() {
-
-	//const underLine = document.createElement("div");
-	//const att = document.createElement("div")
-
 	let hr = document.getElementById('hr').value;
-	let min = document.getElementById('min').value;
-	let alarm = document.getElementById('alarm-lists').textContent = hr+" : "+min;
-
+       	let min = document.getElementById('min').value;
+	document.getElementById('alarm-lists').textContent = hr+" : "+min;
+	checkAlarm(hour, minute);
       }
-      setInterval(timeUpdate,60000);
-      function timeUpdate() {
-	let dt = new Date();
-       	let time = dt.toLocaleTimeString();
+      setInterval(timeUpdate,1000);
+      function timeUpdate(hour, minute) {
+	dt = new Date();		
+       	time = dt.toLocaleTimeString();
 	document.getElementById('current-time').textContent = time;
+	checkAlarm(hour, minute);
       }
-      /*const alarmTime = new Date(); 
-	alarmTime.setHours(hr);		
-	alarmTime.setMinutes(min);
-	alarmTime.setSeconds(0);
+      function checkAlarm(hour, minute) {
+	console.log(hour+ ":  "+minute);
 
-	if(time === alarmTime){
-		console.log("/~/~/~/~/~/~")
-	}*/
-      
+      	dt = new Date();
+	//time=dt.toLocaleTimeString();
+
+    	let currentHr = dt.getHours();
+	let currentMin = dt.getMinutes();
+	
+	console.log(currentHr+ ":  "+currentMin);
+
+
+	if((hour === currentHr) && (minute === currentMin)) {
+		console.log("wohooo...Its working");
+	} else {
+		console.log("Not enough!  Learn More...");
+		
+	}
+
+      }
 
   </script>
 </html>
