@@ -1,0 +1,125 @@
+body{
+	margin: 0px;
+    	height: 96vh;
+    	width: 96vw;
+	background-color: #E1EBEE;
+}
+h1{
+    	text-align: center;
+    	font-size: xx-large;
+    	color: #0045df;
+    	font-weight: bolder;
+    	text-shadow: 2px -2px 2px #78c9dd;
+}
+#h1{
+
+}
+#contant{
+    	display: flex;
+    	align-items: center;
+    	justify-content: space-evenly;
+}
+#signup-container{
+	width: 268px;
+   	height: 328px;
+    	background-color: #1877F2;
+	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+	border-radius: 10px;
+	box-shadow: 10px 5px 6px -2px #afafaf;
+}
+#username{
+    	margin-top: -4px;
+    	margin-left: 34px;
+    	width: 195px;
+    	height: 26px;
+   	border-radius: 3px;
+    	border: none;
+}
+.password{
+    margin-top: 10px;
+    margin-left: 34px;
+    width: 195px;
+    height: 26px;
+    border-radius: 3px;
+    border: none;
+
+}
+.email-id{
+    margin-top: 10px;
+    margin-left: 34px;
+    width: 195px;
+    height: 26px;
+    border-radius: 3px;
+    border: none;
+}
+#chkbox{
+	margin-right: 190px;
+    	margin-top: 10px;
+	color: black;
+}
+label{
+	font-size: 10px;
+    	margin-left: 50px;
+    	margin-top: -14px;
+	color: white;
+}
+#sign-btn{
+	width: 199px;
+    	height: 28px;
+    	margin-top: 10px;
+    	margin-left: 34px;
+    	border: none;
+    	border-radius: 3px;
+	background-color: white;
+}
+#login{
+	background-color: white;
+    	width: 268px;
+    	height: 50px;
+    	margin-top: 26px;
+    	border-top-left-radius: 50%;
+    	border-top-right-radius: 50%;
+    	border-bottom-left-radius: 10px;
+    	border-bottom-right-radius: 10px;
+}
+#login-container{
+    	width: 268px;
+    	height: 328px;
+    	background-color: #1877F2;
+	display: flex;
+    	flex-direction: column;
+    	border-radius: 10px;
+	box-shadow: 10px 5px 6px -2px #afafaf;
+}
+#Login{
+    	width: 268px;
+    	height: 259px;
+    	margin-top: -21px;
+    	border-top-left-radius: 18%;
+    	border-top-right-radius: 18%;
+	border-bottom-left-radius: 10px;
+    	border-bottom-right-radius: 10px;
+    	background: white;
+}
+h2{
+	color: lightgray;
+	text-align: center;
+}
+#pswd{
+	margin-left: 36px;
+    	margin-top: 0px;
+	color: black;
+}
+#login-btn{
+    	width: 199px;
+    	height: 28px;
+    	margin-top: 41px;
+    	margin-left: 34px;
+    	border: none;
+    	border-radius: 5px;
+    	background-color: #1877F2;
+    	color: white;
+
+}
